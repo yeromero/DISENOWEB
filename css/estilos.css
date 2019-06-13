@@ -1,0 +1,198 @@
+@font-face{
+	font-family: DancingScript;
+	src: url(../Fuentes/DancingScript-Regular.ttf);
+}
+
+*{/*Neutralizar Propiedades Navegador*/
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #02010a;
+	font-family: DancingScript, cursive;
+}
+
+#contenido{
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8px;
+	align-content: center;
+}
+
+header{
+	color: white;
+	background-color: #5b7989;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	animation: miAnimacion 2s;
+}
+
+header h1{
+	text-shadow: 2px 2px 2px #02010a;
+	display: inline-block;
+	width: 50%;
+	float: left;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 2%;
+}
+navbar{
+	text-align: right;
+	width: 50%;
+	padding-top: 3%;
+	padding-right: 3%;
+	word-spacing: 25px;
+}
+
+navbar a{
+	color: white;
+}
+
+#actual{
+	text-decoration: none;
+}
+section{
+	display: flex;
+	flex-flow: row wrap;
+	margin: auto;
+}
+section img {
+	display: block;
+	margin: auto;
+}
+#ImagenCentral{
+	align-content: center;
+	background-color: #82c3a6;
+	padding: 2%;
+}
+#ImagenCentral img{
+	width: 100%;
+
+}
+img[src$=jpg]{
+	box-shadow: 2px 2px 2px #02010a;
+}
+
+#ImagenSecundaria{
+	background-color: #d5c75f;
+	width: 100%;
+}
+
+#paisajes, #retratos{
+	width: 50%;
+	text-align: center;
+	padding: 2%;
+}
+
+#paisajes img, #retratos img{
+	border: 1px solid black;
+	transition: transform 2s;
+}
+
+#paisajes img:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px 2px #82c3a6;
+}
+#retratos img:hover{
+	transform: translate(20px, -5px);
+	box-shadow: 2px 2px 2px #82c3a6;
+}
+footer{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #C6d5c5;
+	padding: 2%;
+	
+}
+.contacto, .terminos, .redes, .derechos{
+	width: 25%;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-left: 15px;
+}
+.redes a{
+	text-decoration: none;
+	color: black;
+}
+
+#galeria{
+	width: 100%;
+	background-color: #d5c75f;
+}
+
+#bloque1, #bloque2, #bloque3, #bloque4, #bloque5, #bloque6{
+	width: 33.3%;
+	height: 33.3%;
+	text-align: center;
+	padding: 15px;
+}
+
+#imagen1{
+	-webkit-filter: blur(10px);
+}
+
+#imagen2, #imagen4, #imagen6{
+	-o-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#imagen3{
+	-o-filter: sepia(90%);
+	-moz-filter: sepia(90%);
+	-ms-filter: sepia(90%);
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
+@keyframes miAnimacion {
+  0% {margin-top: 150%}
+  60% {margin-top: -5%}
+  100% {margin-top: 0%}
+  }
+@media all and (max-width: 899px){
+  #contenido{
+    width: 100%;
+  }
+  #cabecera{
+    width: 100%;
+    flex-direction: column;
+
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  navbar{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  #paisajes, #retratos{
+    width: 100%;
+    }
+    .contacto, .terminos, .redes, .derechos {
+      width: 100%;
+      padding: 20px;
+    }
+  #galeria {
+    width: 100%;
+  }
+  #bloque1, #bloque2, #bloque3, #bloque4, #bloque5, #bloque6 {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
